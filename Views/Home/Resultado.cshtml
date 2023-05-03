@@ -1,0 +1,73 @@
+﻿@model ExeKayqueIV.Models.Cliente
+
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar novo Cliente", "Cliente")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Login)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Senha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ConfirmaSenha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.IdCli)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.NomeCli)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.CPF)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Login)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Senha)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.ConfirmaSenha)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.DataCadastro)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+
+</table>
